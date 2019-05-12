@@ -27,3 +27,9 @@ target_link_libraries(main
 #${PROJECT_SOURCE_DIR}:
 #   当前项目的顶级源目录
 #
+#find_package(Protobuf REQUIRED) 报错
+# Could NOT find Protobuf (missing: Protobuf_INCLUDE_DIR) 
+#因为只安装了protoc编译器，而不是libprotobuf
+#
+# sudo apt-get install  libprotobuf-dev protobuf-compiler
+
