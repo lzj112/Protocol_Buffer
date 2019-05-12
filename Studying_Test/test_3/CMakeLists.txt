@@ -21,7 +21,6 @@ add_executable(main
                ${PROTO_SRCS}
                ${PROTO_HDRS})
 target_link_libraries(main 
-                      pthread 
                       protobuf)
 
 
