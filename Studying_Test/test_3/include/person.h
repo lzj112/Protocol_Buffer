@@ -1,20 +1,21 @@
 #ifndef PERSON_H_
 #define PERSON_H_
 
+#include <string>
 #include "student.pb.h"
 
 class Person 
 {
 public: 
-    person()
+    Person()
     {}
-    person(string name, int score);
-    ~person() 
+    Person(std::string name, int score);
+    ~Person() 
     {}
-    void setStuInfo(string name, int score);
+    void setStuInfo(std::string name, int score);
     void print();
 private:
-    Student::student;
+    Student::student stu;
 };
 
 #endif

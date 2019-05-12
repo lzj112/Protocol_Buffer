@@ -1,25 +1,26 @@
-
+#include <string>
 #include <iostream>
 
 #include "person.h"
+using namespace std;
 
 Person::Person(string name, int score) 
 {
-    student.set_name(name);
-    student.set_score(score);
+    stu.set_name(name);
+    stu.set_score(score);
 }
 
 void Person::setStuInfo(string name, int score) 
 {
-    student.set_name(name);
-    student.set_score(score);
+    stu.set_name(name);
+    stu.set_score(score);
 }
 
 void Person::print() 
 {
     std::cout << "name = "
-              << student.name()
+              << stu.name()
               << ", score = "
-              << student.score()
+              << stu.score()
               << std::endl;
 }
